@@ -1,0 +1,52 @@
+{
+  "name": "covid-chartjs",
+  "version": "1.0.0",
+  "description": "A Javascript project to show charts for Covid-19 with ChartJS",
+  "main": "src/index.js",
+  "scripts": {
+    "start:dev": "webpack-dev-server --mode development",
+    "build:dev": "webpack --mode development",
+    "build:prod": "webpack --mode production",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [
+    "chartjs",
+    "covid-19",
+    "coronavirus",
+    "javascript"
+  ],
+  "author": "@manumac86",
+  "license": "MIT",
+  "devDependencies": {
+    "@babel/cli": "^7.1.0",
+    "@babel/core": "^7.1.0",
+    "@babel/preset-env": "^7.1.0",
+    "@babel/preset-react": "^7.0.0",
+    "babel-loader": "^8.0.2",
+    "css-loader": "^1.0.0",
+    "file-loader": "^6.0.0",
+    "moment-locales-webpack-plugin": "^1.2.0",
+    "node-sass": "^4.13.1",
+    "sass-loader": "^8.0.2",
+    "style-loader": "^0.23.0",
+    "webpack": "^4.42.1",
+    "webpack-cli": "^3.1.1",
+    "webpack-dev-server": "^3.1.8"
+  },
+  "dependencies": {
+    "@apollo/react-hooks": "^3.1.4",
+    "apollo-boost": "^0.4.7",
+    "chart.js": "^2.9.3",
+    "dotenv": "^8.2.0",
+    "dotenv-webpack": "^1.7.0",
+    "graphql": "^15.0.0",
+    "moment": "^2.24.0",
+    "react": "^16.12.2",
+    "react-apollo": "^3.1.4",
+    "react-dom": "^16.12.2",
+    "react-hot-loader": "^4.3.11",
+    "react-markdown": "^4.3.1",
+    "react-moment": "^0.9.7",
+    "react-router-dom": "^5.1.2"
+  }
+}

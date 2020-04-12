@@ -13,7 +13,6 @@ pipelines:
         script: # Modify the commands below to build your repository.
           - npm install
           - npm run build:prod
-          - cp
           - pipe: atlassian/sftp-deploy:0.5.4
             variables:
               USER: 'manumac@manumac.com.ar'

@@ -152,5 +152,9 @@
     id: 36,
     date: 'April 10 2020',
     newCases: 81,
+  }, {
+    id: 37,
+    date: 'April 11 2020',
+    newCases: 167,
   },
 ];

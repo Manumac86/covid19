@@ -19,6 +19,11 @@ let dailyCases = document.getElementById('newDailyCases').getContext('2d');
  */
 let accDailyCases = document.getElementById('accDailyCases').getContext('2d');
 /**
+ * The Daily Deaths Element to draw the `dailyDeaths` Chart.
+ * @type {HTMLElement}
+ */
+let dailyDeaths = document.getElementById('dailyDeaths').getContext('2d');
+/**
  * The `confirmedTotalLabel` element to write the total confirmed cases.
  * @type {HTMLElement}
  */
@@ -29,6 +34,11 @@ let confirmedTotalLabel = document.getElementById('confirmedTotal');
  */
 let newDailyCases = [];
 /**
+ * The New Daily Deaths.
+ * @type {Array}
+ */
+let newDailyDeaths = [];
+/**
  * The Total Confirmed Cases.
  * @type {Number}
  */
@@ -38,6 +48,7 @@ let confirmedTotal = 0;
  */
 for (let i = 0; i < apiData.length; i++) {
   newDailyCases.push(apiData[i].newCases);
+  newDailyDeaths.push(apiData[i].deaths);
 };
 /**
  * The formatted ready to use new daily cases data.
@@ -49,6 +60,11 @@ let newDailyCasesData = generateData(newDailyCases, newDailyCases.length);
  * @type {Array}
  */
 let accumulatedDailyData = generateAccumulatedData(newDailyCases, newDailyCases.length);
+/**
+ * The formatted ready to use accumulated daily deaths data.
+ * @type {Array}
+ */
+let dailyDeathsData = generateData(newDailyDeaths, newDailyCases.length);
 /**
  * Write the total confirmed cases within the HTML Element.
  */
@@ -143,6 +159,38 @@ var accumulatedDailyCasesChart = new Chart(accDailyCases, {
       data: accumulatedDailyData,
       backgroundColor: [
         'rgba(100, 235, 104, 1)',
+      ],
+      borderWidth: 0,
+    }]
+  },
+  options: {
+    scales: {
+      yAxes: [{
+          ticks: {
+              beginAtZero: true,
+          },
+      }],
+      xAxes: [{
+          type: 'time',
+          time: {
+              unit: 'day'
+          }
+      }],
+    },
+  },
+});
+
+/**
+ * The Chart for Daily Deaths.
+ */
+var dailyDeathsChart = new Chart(dailyDeaths, {
+  type: 'line',
+  data: {
+    datasets: [{
+      label: 'Daily Deaths',
+      data: dailyDeathsData,
+      backgroundColor: [
+        'red',
       ],
       borderWidth: 0,
     }]

@@ -45,6 +45,14 @@ module.exports =
           height="300"
         ></canvas>
       </div>
+      <div class="graphSec px-2 mt-4">
+        <h4 class="text-center py-3">Daily Deaths</h4>
+        <canvas
+          id="dailyDeaths"
+          width="500"
+          height="300"
+        ></canvas>
+      </div>
     </div>
   </div>
 </div>

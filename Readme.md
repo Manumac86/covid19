@@ -13,6 +13,7 @@ Right now, the data is hardcoded within `api/apiData.js` but eventually will be 
 I'm using Firebase to host [Covid19 Argentina Tracker](https://covid19.manumac.com.ar) with a custom domain [covid19.manumac.com.ar](https://covid19.manumac.com.ar).
 
 ## Contribution and Comments
+Support this and all my other projects in [Patreon](https://patreon/manumac86) 
 Please feel free to open issues with your comments or contributions or contact me on Twitter.
 
 ## Social

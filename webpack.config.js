@@ -4,6 +4,7 @@ const Dotenv = require('dotenv-webpack');
 const MomentLocalesPlugin = require('moment-locales-webpack-plugin');
 const HtmlWebPackPlugin = require("html-webpack-plugin");
 const { CleanWebpackPlugin } = require('clean-webpack-plugin');
+const CopyPlugin = require('copy-webpack-plugin');
 
 module.exports = {
   entry: "./src/index.js",
@@ -38,6 +39,17 @@ module.exports = {
           'sass-loader',
         ],
       },
+      {
+        test: /\.(jpg|png|gif|svg)$/,
+        use: {
+          loader: "url-loader",
+          options: {
+            limit: 1000000,
+            fallback: "file-loader",
+            name: "images/[name].[ext]"
+          }
+        }
+      },
     ]
   },
   resolve: { extensions: ["*", ".js", ".jsx"] },
@@ -64,6 +76,9 @@ module.exports = {
     }),
     new CleanWebpackPlugin({
       verbose: true,
-    })
+    }),
+    new CopyPlugin([
+      { from: './src/images', to: 'images' },
+    ]),
   ]
 };

@@ -3,8 +3,6 @@ import './css/index.scss';
 import template from './template';
 import moment from 'moment';
 import Chart from 'chart.js';
-import './images/favicon.png';
-import './images/headerLogo.jpg';
 
 const app = document.getElementById('app');
 

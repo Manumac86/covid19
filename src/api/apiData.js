@@ -199,5 +199,10 @@
     date: 'April 12 2020',
     newCases: 66,
     deaths: 5,
+  }, {
+    id: 39,
+    date: 'April 13 2020',
+    newCases: 69,
+    deaths: 3,
   },
 ];

@@ -1,4 +1,5 @@
 import apiData from './api/apiData';
+import '@fortawesome/fontawesome-free/js/all'
 import './css/index.scss';
 import template from './template';
 import moment from 'moment';

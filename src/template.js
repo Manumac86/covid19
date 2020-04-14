@@ -60,7 +60,7 @@ module.exports =
 <!-- Footer -->
 <div class="d-flex bottomArea justify-content-center align-items-center w-100">
   <div class="d-flex flex-column align-items-center">
-    <p class="m-1"><a target="_blank" href="https://manumac.com.ar">manumac.com.ar</a></p>
-    <p class="m-1"><a target="_blank" href="https://twitter.com/manumac86">@manumac</a></p>
+    <p class="m-1"><i class="fas fa-globe"></i><a target="_blank" href="https://manumac.com.ar"> manumac.com.ar</a></p>
+    <p class="m-1"><i class="fab fa-twitter"></i><a target="_blank" href="https://twitter.com/manumac86"> @manumac</a></p>
   </div>
 </div>`

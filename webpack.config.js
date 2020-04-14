@@ -2,10 +2,11 @@ const path = require("path");
 const webpack = require("webpack");
 const Dotenv = require('dotenv-webpack');
 const MomentLocalesPlugin = require('moment-locales-webpack-plugin');
+const HtmlWebPackPlugin = require("html-webpack-plugin");
+const { CleanWebpackPlugin } = require('clean-webpack-plugin');
 
 module.exports = {
   entry: "./src/index.js",
-  mode: "development",
   module: {
     rules: [
       {
@@ -22,8 +23,8 @@ module.exports = {
         test: /\.(png|jpe?g|gif)$/i,
         loader: 'file-loader',
         options: {
-          name: '[path][name].[ext]',
-          outputPath: 'public/images',
+          name: '[name].[ext]',
+          outputPath: '/images',
         },
       },
       {
@@ -42,7 +43,6 @@ module.exports = {
   resolve: { extensions: ["*", ".js", ".jsx"] },
   output: {
     path: path.resolve(__dirname, "dist/"),
-    publicPath: "/dist/",
     filename: "main.js"
   },
   devServer: {
@@ -58,5 +58,12 @@ module.exports = {
     new MomentLocalesPlugin({
         localesToKeep: ['es-us'],
     }),
+    new HtmlWebPackPlugin({
+      template: "./index.html",
+      filename: "./index.html"
+    }),
+    new CleanWebpackPlugin({
+      verbose: true,
+    })
   ]
 };

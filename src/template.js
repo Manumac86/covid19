@@ -1,7 +1,7 @@
 module.exports =
 `<div class="d-flex justify-content-center">
   <img 
-    src="./public/images/headerLogo.jpg" 
+    src="./images/headerLogo.jpg" 
     class="img-fluid logo m-3"
   >
 </div>

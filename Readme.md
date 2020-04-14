@@ -17,5 +17,9 @@ Please feel free to open issues with your comments or contributions or contact m
 
 ## Social
 [Twitter](https://twitter.com/manumac86)
+
 [Github](https://github.com/Manumac86)
+
 [Web](https://manumac.com.ar)
+
+[Patreon](https://patreon/manumac86)

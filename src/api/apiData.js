@@ -209,5 +209,10 @@
     date: 'April 14 2020',
     newCases: 166,
     deaths: 4,
+  }, {
+    id: 41,
+    date: 'April 15 2020',
+    newCases: 128,
+    deaths: 7,
   },
 ];

@@ -244,5 +244,50 @@
     date: 'April 21 2020',
     newCases: 112,
     deaths: 6,
+  }, {
+    id: 48,
+    date: 'April 22 2020',
+    newCases: 144,
+    deaths: 7,
+  }, {
+    id: 49,
+    date: 'April 23 2020',
+    newCases: 147,
+    deaths: 6,
+  }, {
+    id: 50,
+    date: 'April 24 2020',
+    newCases: 172,
+    deaths: 9,
+  },  {
+    id: 51,
+    date: 'April 25 2020',
+    newCases: 173,
+    deaths: 6,
+  }, {
+    id: 52,
+    date: 'April 26 2020',
+    newCases: 112,
+    deaths: 5,
+  }, {
+    id: 53,
+    date: 'April 27 2020',
+    newCases: 111,
+    deaths: 5,
+  }, {
+    id: 54,
+    date: 'April 28 2020',
+    newCases: 124,
+    deaths: 10,
+  }, {
+    id: 55,
+    date: 'April 29 2020',
+    newCases: 158,
+    deaths: 7,
+  }, {
+    id: 56,
+    date: 'April 30 2020',
+    newCases: 143,
+    deaths: 3,
   },
 ];

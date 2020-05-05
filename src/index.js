@@ -215,6 +215,11 @@ var newDailyCasesChart = new Chart(dailyCases, {
     }]
   },
   options: {
+    elements: {
+      point:{
+        radius: 0
+      }
+    },
     scales: {
       yAxes: [{
           ticks: {
@@ -264,6 +269,11 @@ var accumulatedDailyCasesChart = new Chart(accDailyCases, {
     }]
   },
   options: {
+    elements: {
+      point:{
+        radius: 0
+      }
+    },
     scales: {
       yAxes: [{
         type: "linear",

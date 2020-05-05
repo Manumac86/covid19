@@ -33,5 +33,22 @@
 
 		<!-- Initialize Firebase -->
 		<script src="/__/firebase/init.js"></script>
+
+		<script>
+			// Your web app's Firebase configuration
+			var firebaseConfig = {
+				apiKey: "AIzaSyDjaYN-Jc2iG668O0bgXvrhF0SLoVC-rqI",
+				authDomain: "covid19-manumac.firebaseapp.com",
+				databaseURL: "https://covid19-manumac.firebaseio.com",
+				projectId: "covid19-manumac",
+				storageBucket: "covid19-manumac.appspot.com",
+				messagingSenderId: "992884834095",
+				appId: "1:992884834095:web:14d22f20bf898eab09abda",
+				measurementId: "G-FBM38L9FJX"
+			};
+			// Initialize Firebase
+			firebase.initializeApp(firebaseConfig);
+			firebase.analytics();
+		</script>
 	</body>
 </html>

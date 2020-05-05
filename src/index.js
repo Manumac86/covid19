@@ -212,6 +212,7 @@ var newDailyCasesChart = new Chart(dailyCases, {
         'rgba(238, 184, 104, 1)',
       ],
       borderWidth: 0,
+      pointRadius: 0
     }]
   },
   options: {
@@ -250,6 +251,7 @@ var accumulatedDailyCasesChart = new Chart(accDailyCases, {
         'rgba(100, 100, 100, 0.4)',
       ],
       borderWidth: 1,
+      pointRadius: 0
     }, {
       yAxisID: "y-axis-1",
       label: '# of Active Daily Cases',
@@ -258,6 +260,7 @@ var accumulatedDailyCasesChart = new Chart(accDailyCases, {
         'rgba(200, 100, 200, 0.4)',
       ],
       borderWidth: 1,
+      pointRadius: 0
     }, {
       yAxisID: "y-axis-2",
       label: '# of Recovered Cases',
@@ -266,6 +269,7 @@ var accumulatedDailyCasesChart = new Chart(accDailyCases, {
         'rgba(100, 200, 100, 0.4)',
       ],
       borderWidth: 1,
+      pointRadius: 0
     }]
   },
   options: {
@@ -321,6 +325,7 @@ var dailyDeathsChart = new Chart(dailyDeaths, {
         'red',
       ],
       borderWidth: 0,
+      pointRadius: 0
     }]
   },
   options: {

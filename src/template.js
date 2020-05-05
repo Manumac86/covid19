@@ -19,11 +19,11 @@ module.exports =
   <!-- Confirmed Number -->
   <div class="row jumbotron">
     <div class="row col-12 w-100">
-      <div class="graphSec border col-6">
+      <div class="graphSec border col-md-6 col-sm-12">
         <h4 class="text-center pt-3">Confirmed Cases</h4>
         <h1 class="text-center pb-3 totalNum" id="confirmedTotal"></h1>
       </div>
-      <div class="graphSec border col-6">
+      <div class="graphSec border col-md-6 col-sm-12">
         <h4 class="text-center pt-3">Recovered Cases</h4>
         <h1 class="text-center pb-3 totalNum" id="recoveredTotal"></h1>
       </div>

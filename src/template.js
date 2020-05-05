@@ -18,10 +18,20 @@ module.exports =
   
   <!-- Confirmed Number -->
   <div class="row jumbotron">
-    <div class="col-12 w-100">
-      <div class="graphSec">
+    <div class="row col-12 w-100">
+      <div class="graphSec border col-6">
         <h4 class="text-center pt-3">Confirmed Cases</h4>
         <h1 class="text-center pb-3 totalNum" id="confirmedTotal"></h1>
+      </div>
+      <div class="graphSec border col-6">
+        <h4 class="text-center pt-3">Recovered Cases</h4>
+        <h1 class="text-center pb-3 totalNum" id="recoveredTotal"></h1>
+      </div>
+    </div>
+    <div class="row col-12 w-100">
+      <div class="graphSec col-12">
+        <h4 class="text-center pt-3">Active Cases</h4>
+        <h1 class="text-center pb-3 totalNum" id="activeTotal"></h1>
       </div>
     </div>
   </div>
@@ -29,18 +39,18 @@ module.exports =
   <!-- Charts -->
   <div class="row mt-3 mb-3">
     <div class="col-12 w-100 mb-4 mb-md-0">
-      <div class="graphSec px-2">
-        <h4 class="text-center py-3">New Daily Cases</h4>
-        <canvas 
-          id="newDailyCases" 
-          width="500" 
-          height="300"
-        ></canvas>
-      </div>
       <div class="graphSec px-2 mt-4">
         <h4 class="text-center py-3">Accumulated Daily Cases</h4>
         <canvas 
           id="accDailyCases" 
+          width="500" 
+          height="300"
+        ></canvas>
+      </div>
+      <div class="graphSec px-2">
+        <h4 class="text-center py-3">New Daily Cases</h4>
+        <canvas 
+          id="newDailyCases" 
           width="500" 
           height="300"
         ></canvas>

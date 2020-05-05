@@ -17,7 +17,7 @@ module.exports =
   </div>
   
   <!-- Confirmed Number -->
-  <div class="row jumbotron">
+  <div class="row jumbotron justify-content-center">
     <div class="row col-12 w-100">
       <div class="graphSec border col-lg-6 col-md-12">
         <h4 class="text-center pt-3">Confirmed Cases</h4>

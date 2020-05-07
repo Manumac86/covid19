@@ -12,7 +12,8 @@ module.exports =
   <div class="d-flex flex-column text-center justify-content-center pb-2">
     <h4>COVID-19 Argentina Tracker</h4>
     <span>
-      Data Source: <a href="https://www.argentina.gob.ar/coronavirus/informe-diario">argentina.gob.ar</a>
+      Data Source: <a href="https://www.argentina.gob.ar/coronavirus/informe-diario">argentina.gob.ar</a> </br>
+      Last Update: May 7, 2020.
     </span>
   </div>
   
@@ -39,7 +40,7 @@ module.exports =
   <!-- Charts -->
   <div class="row mt-3 mb-3">
     <div class="col-12 w-100 mb-4 mb-md-0">
-      <div class="graphSec px-2 mt-4">
+      <div class="chart graphSec px-2 mt-4">
         <h4 class="text-center py-3">Accumulated Daily Cases</h4>
         <canvas 
           id="accDailyCases" 
@@ -47,7 +48,7 @@ module.exports =
           height="300"
         ></canvas>
       </div>
-      <div class="graphSec px-2">
+      <div class="chart graphSec px-2 mt-4">
         <h4 class="text-center py-3">New Daily Cases</h4>
         <canvas 
           id="newDailyCases" 
@@ -55,7 +56,7 @@ module.exports =
           height="300"
         ></canvas>
       </div>
-      <div class="graphSec px-2 mt-4">
+      <div class="chart graphSec px-2 mt-4">
         <h4 class="text-center py-3">Daily Deaths</h4>
         <canvas
           id="dailyDeaths"

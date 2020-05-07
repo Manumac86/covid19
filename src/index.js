@@ -93,15 +93,15 @@ let newDailyCasesData = generateData(newDailyCases, newDailyCases.length);
  */
 let recoveredCasesData = generateData(recoveredCases, recoveredCases.length);
 /**
+ * The formatted ready to use accumulated daily deaths data.
+ * @type {Array}
+ */
+let dailyDeathsData = generateData(newDailyDeaths, newDailyDeaths.length);
+/**
  * The formatted ready to use accumulated daily cases data.
  * @type {Array}
  */
 let accumulatedDailyData = generateAccumulatedData(newDailyCases, newDailyCases.length);
-/**
- * The formatted ready to use accumulated daily deaths data.
- * @type {Array}
- */
-let dailyDeathsData = generateData(newDailyDeaths, newDailyCases.length);
 /**
  * The formatted ready to use accumulated recovered cases data.
  * @type {Array}
@@ -111,8 +111,7 @@ let accumulatedRecoveredData = generateAccumulatedData(recoveredCases, newDailyC
  * The formatted ready to use accumulated recovered cases data.
  * @type {Array}
  */
-let accumulatedDeathsData = generateAccumulatedData(dailyDeathsData, newDailyCases.length);
-
+let accumulatedDeathsData = generateAccumulatedData(newDailyDeaths, newDailyCases.length);
 /**
  * The formatted ready to use recovered cases data.
  * @type {Array}
@@ -122,7 +121,8 @@ activeTotal = activeCasesData[activeCasesData.length - 1].y;
 /**
  * Write the total confirmed cases within the HTML Element.
  */
-confirmedTotalLabel.innerHTML = sumDailyTotals(confirmedTotal, newDailyCases);
+const confirmedCasesTotal = sumDailyTotals(confirmedTotal, newDailyCases);
+confirmedTotalLabel.innerHTML = confirmedCasesTotal;
 /**
  * Write the total recovered cases within the HTML Element.
  */
@@ -177,7 +177,7 @@ function generateActiveData(accumulatedDailyData, accumulatedRecoveredData, accu
   let result = [];
   for (let i = 0; i < numberOfDays; i++){
     const x = moment('March 5 2020', "MMMM DD YYYY" ).add(i, 'days');
-    let data = accumulatedDailyData[i].y - accumulatedRecoveredData[i].y - dailyDeathsData[i].y;
+    let data = accumulatedDailyData[i].y - accumulatedRecoveredData[i].y - accumulatedDeathsData[i].y;
     result.push({
       x,
       y: data,
@@ -209,9 +209,12 @@ var newDailyCasesChart = new Chart(dailyCases, {
       label: '# of New Cases',
       data: newDailyCasesData,
       backgroundColor: [
+        'rgba(238, 184, 104, 0.4)',
+      ],
+      borderColor: [
         'rgba(238, 184, 104, 1)',
       ],
-      borderWidth: 0,
+      borderWidth: 1,
       pointRadius: 0
     }]
   },
@@ -250,6 +253,9 @@ var accumulatedDailyCasesChart = new Chart(accDailyCases, {
       backgroundColor: [
         'rgba(100, 100, 100, 0.4)',
       ],
+      borderColor: [
+        'rgba(100, 100, 100, 1)'
+      ],
       borderWidth: 1,
       pointRadius: 0
     }, {
@@ -259,6 +265,9 @@ var accumulatedDailyCasesChart = new Chart(accDailyCases, {
       backgroundColor: [
         'rgba(200, 100, 200, 0.4)',
       ],
+      borderColor: [
+        'rgba(200, 100, 200, 1)'
+      ],
       borderWidth: 1,
       pointRadius: 0
     }, {
@@ -267,6 +276,9 @@ var accumulatedDailyCasesChart = new Chart(accDailyCases, {
       data: accumulatedRecoveredData,
       backgroundColor: [
         'rgba(100, 200, 100, 0.4)',
+      ],
+      borderColor: [
+        'rgba(100, 200, 100, 1)'
       ],
       borderWidth: 1,
       pointRadius: 0
@@ -287,7 +299,7 @@ var accumulatedDailyCasesChart = new Chart(accDailyCases, {
         reverse: false,
         ticks: {
           beginAtZero: true,
-          max: 5000,
+          max: confirmedCasesTotal,
           min: 0,
         },
       }, {
@@ -297,7 +309,7 @@ var accumulatedDailyCasesChart = new Chart(accDailyCases, {
         position: "right",
         reverse: true,
         ticks: {
-          max: 5000,
+          max: confirmedCasesTotal,
           min: 0,
           reverse : true,
         },
@@ -321,10 +333,13 @@ var dailyDeathsChart = new Chart(dailyDeaths, {
     datasets: [{
       label: 'Daily Deaths',
       data: dailyDeathsData,
-      backgroundColor: [
-        'red',
+      borderColor: [
+        'rgba(100, 100, 100, 1)',
       ],
-      borderWidth: 0,
+      backgroundColor: [
+        'rgba(100, 100, 100, 0.4)',
+      ],
+      borderWidth: 1,
       pointRadius: 0
     }]
   },

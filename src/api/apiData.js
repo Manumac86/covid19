@@ -314,19 +314,19 @@
     id: 51,
     date: 'April 25 2020',
     newCases: 173,
-    deaths: 6,
+    deaths: 11,
     recovered: 54,
   }, {
     id: 52,
     date: 'April 26 2020',
     newCases: 112,
-    deaths: 5,
+    deaths: 10,
     recovered: 77,
   }, {
     id: 53,
     date: 'April 27 2020',
     newCases: 111,
-    deaths: 5,
+    deaths: 10,
     recovered: 33,
   }, {
     id: 54,
@@ -338,19 +338,19 @@
     id: 55,
     date: 'April 29 2020',
     newCases: 158,
-    deaths: 7,
+    deaths: 12,
     recovered: 30,
   }, {
     id: 56,
     date: 'April 30 2020',
     newCases: 143,
-    deaths: 3,
+    deaths: 13,
     recovered: 64,
   }, {
     id: 57,
     date: 'May 1 2020',
     newCases: 105,
-    deaths: 5,
+    deaths: 10,
     recovered: 36,
   }, {
     id: 58,
@@ -362,7 +362,7 @@
     id: 59,
     date: 'May 3 2020',
     newCases: 103,
-    deaths: 5,
+    deaths: 6,
     recovered: 34,
   }, {
     id: 60,
@@ -370,12 +370,23 @@
     newCases: 95,
     deaths: 11,
     recovered: 88,
-  },
-   {
+  }, {
     id: 61,
     date: 'May 5 2020',
-    newCases: 0,
-    deaths: 2,
+    newCases: 133,
+    deaths: 12,
     recovered: 30,
+  }, {
+    id: 61,
+    date: 'May 6 2020',
+    newCases: 188,
+    deaths: 9,
+    recovered: 61,
+  }, {
+    id: 62,
+    date: 'May 7 2020',
+    newCases: 0,
+    deaths: 0,
+    recovered: 77,
   },
 ];

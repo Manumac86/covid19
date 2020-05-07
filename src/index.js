@@ -1,9 +1,12 @@
 import apiData from './api/apiData';
 import '@fortawesome/fontawesome-free/js/all'
+import ScrollReveal from 'scrollreveal';
 import './css/index.scss';
 import template from './template';
 import moment from 'moment';
 import Chart from 'chart.js';
+
+ScrollReveal().reveal('.logoTipo', { duration: 5000 });
 
 const app = document.getElementById('app');
 

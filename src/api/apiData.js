@@ -385,8 +385,8 @@
   }, {
     id: 62,
     date: 'May 7 2020',
-    newCases: 0,
-    deaths: 0,
-    recovered: 77,
+    newCases: 163,
+    deaths: 12,
+    recovered: 135,
   },
 ];

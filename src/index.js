@@ -295,7 +295,7 @@ var accumulatedDailyCasesChart = new Chart(accDailyCases, {
     },
     scales: {
       yAxes: [{
-        type: "linear",
+        type: "logarithmic",
         display: true,
         id: "y-axis-1",
         position: "left",
@@ -306,7 +306,7 @@ var accumulatedDailyCasesChart = new Chart(accDailyCases, {
           min: 0,
         },
       }, {
-        type: "linear",
+        type: "logarithmic",
         display: true,
         id: "y-axis-2",
         position: "right",

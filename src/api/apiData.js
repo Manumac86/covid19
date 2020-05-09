@@ -387,6 +387,12 @@
     date: 'May 7 2020',
     newCases: 163,
     deaths: 12,
-    recovered: 135,
+    recovered: 100,
+  }, {
+    id: 63,
+    date: 'May 8 2020',
+    newCases: 240,
+    deaths: 8,
+    recovered: 35,
   },
 ];

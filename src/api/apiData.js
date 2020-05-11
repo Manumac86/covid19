@@ -394,5 +394,17 @@
     newCases: 240,
     deaths: 8,
     recovered: 35,
+  }, {
+    id: 64,
+    date: 'May 9 2020',
+    newCases: 165,
+    deaths: 7,
+    recovered: 98,
+  }, {
+    id: 65,
+    date: 'May 9 2020',
+    newCases: 258,
+    deaths: 5,
+    recovered: 80,
   },
 ];

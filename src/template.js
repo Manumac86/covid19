@@ -13,7 +13,7 @@ module.exports =
     <h4>COVID-19 Argentina Tracker</h4>
     <span>
       Data Source: <a href="https://www.argentina.gob.ar/coronavirus/informe-diario">argentina.gob.ar</a> </br>
-      Last Update: May 8, 2020.
+      Last Update: May 10 s, 2020.
     </span>
   </div>
   

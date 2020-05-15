@@ -402,9 +402,33 @@
     recovered: 98,
   }, {
     id: 65,
-    date: 'May 9 2020',
+    date: 'May 10 2020',
     newCases: 258,
     deaths: 5,
     recovered: 80,
+  }, {
+    id: 66,
+    date: 'May 11 2020',
+    newCases: 244,
+    deaths: 9,
+    recovered: 25,
+  }, {
+    id: 67,
+    date: 'May 12 2020',
+    newCases: 316,
+    deaths: 10,
+    recovered: 404,
+  }, {
+    id: 68,
+    date: 'May 13 2020',
+    newCases: 285,
+    deaths: 8,
+    recovered: 119,
+  }, {
+    id: 69,
+    date: 'May 14 2020',
+    newCases: 255,
+    deaths: 24,
+    recovered: 0,
   },
 ];
